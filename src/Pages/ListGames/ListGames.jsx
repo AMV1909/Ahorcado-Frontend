@@ -5,7 +5,7 @@ import { BsArrowLeft } from "react-icons/bs";
 
 import { getGames } from "../../API/Games";
 import { CardGame } from "../../Components/CardGame/CardGame";
-import { CardCode } from "../../Components/CardCode/CardCOde";
+import { CardCode } from "../../Components/CardCode/CardCode";
 
 import "./ListGames.css";
 
