@@ -10,6 +10,8 @@ Hangman game developed with React.js, Node.js, Express.js and Socket.io. This pr
 
 ## Features
 
+-   Create rooms to play with your friends
+-   Join to rooms with a password code to play with your friends
 -   Instantly response and request with socket.io
 -   Fully responsive with all devices
 -   Real time game
