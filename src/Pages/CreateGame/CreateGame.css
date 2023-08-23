@@ -1,0 +1,66 @@
+.ahorcado__createGame-header {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__createGame-header_title {
+    width: 348px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__createGame-header_title a {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+
+    background: none;
+    border: none;
+    border-radius: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__createGame-header_title a:hover {
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+.ahorcado__createGame-header_title h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.ahorcado__createGame-form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.ahorcado__createGame-form form {
+    width: 348px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__createGame-form form input {
+    width: 75%;
+}
+
+.ahorcado__createGame-form form button {
+    width: 35%;
+    margin-top: 20px;
+}

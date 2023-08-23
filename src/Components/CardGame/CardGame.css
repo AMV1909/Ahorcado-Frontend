@@ -1,0 +1,28 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 348px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:hover {
+    background: var(--background-button);
+    cursor: pointer;
+}
+
+.card h2 {
+    width: 80%;
+    margin: 0px !important;
+}
+
+.card p {
+    width: 20%;
+}

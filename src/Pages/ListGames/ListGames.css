@@ -1,0 +1,77 @@
+.ahorcado__listGames-header {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__listGames-header_title {
+    width: 348px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__listGames-header_title a {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+
+    background: none;
+    border: none;
+    border-radius: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__listGames-header_title a:hover {
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+.ahorcado__listGames-header_title h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.ahorcado__listGames-header_form {
+    width: 320px;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ahorcado__listGames-header_form-buttons {
+    width: 40%;
+
+    display: flex;
+}
+
+.ahorcado__listGames-header_form-buttons button {
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.ahorcado__listGames-list {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado__listGames-list div,
+.ahorcado__listGames-list h2 {
+    margin-top: 10px;
+}
