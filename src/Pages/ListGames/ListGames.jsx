@@ -17,12 +17,10 @@ export function ListGames() {
     const [showCardCode, setShowCardCode] = useState(false);
 
     useEffect(() => {
-        getGames()
-            .then((data) => {
-                setGames(data);
-                setAuxGames(data);
-            })
-            .catch((err) => console.log(err));
+        getGames().then((data) => {
+            setGames(data);
+            setAuxGames(data);
+        });
     }, []);
 
     const onChange = (e) => {
@@ -42,12 +40,10 @@ export function ListGames() {
     };
 
     const rechargeGames = () => {
-        getGames()
-            .then((data) => {
-                setGames(data);
-                setAuxGames(data);
-            })
-            .catch((err) => console.log(err));
+        getGames().then((data) => {
+            setGames(data);
+            setAuxGames(data);
+        });
     };
 
     return (
@@ -86,7 +82,7 @@ export function ListGames() {
                 <span></span>
             </div>
             <div className="ahorcado__listGames-list">
-                {games.length > 0 ? (
+                {games && games.length > 0 ? (
                     <div>
                         {games.map((game) => {
                             return (
