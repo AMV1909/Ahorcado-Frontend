@@ -17,10 +17,12 @@ export function ListGames() {
     const [showCardCode, setShowCardCode] = useState(false);
 
     useEffect(() => {
-        getGames().then((data) => {
-            setGames(data);
-            setAuxGames(data);
-        });
+        getGames()
+            .then((data) => {
+                setGames(data);
+                setAuxGames(data);
+            })
+            .catch((err) => console.log(err));
     }, []);
 
     const onChange = (e) => {
@@ -40,10 +42,12 @@ export function ListGames() {
     };
 
     const rechargeGames = () => {
-        getGames().then((data) => {
-            setGames(data);
-            setAuxGames(data);
-        });
+        getGames()
+            .then((data) => {
+                setGames(data);
+                setAuxGames(data);
+            })
+            .catch((err) => console.log(err));
     };
 
     return (
