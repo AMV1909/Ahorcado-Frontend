@@ -51,7 +51,6 @@ const drawImage = (errors) => {
 export function Game({ socket }) {
     const { id } = useParams();
     const [game, setGame] = useState(null);
-    const [errors, setErrors] = useState(0);
     const letters = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
     const navigate = useNavigate();
 
@@ -65,7 +64,7 @@ export function Game({ socket }) {
         }
     }, []);
 
-    socket.on("game-" + id, (data) => setGame(data));
+    socket.on("game-" + id, (data) => setGame(data) && console.log(data));
     socket.on("resetGame-" + id, () => window.location.reload());
     socket.on("deleteGame-" + id, () => navigate("/list-games"));
 
@@ -128,7 +127,7 @@ export function Game({ socket }) {
             {game ? (
                 <div className="ahorcado__game-game">
                     <div className="ahorcado__game-game_draw">
-                        <img src={drawImage(errors)} alt="Ahorcado" />
+                        <img src={drawImage(game.bad)} alt="Ahorcado" />
                     </div>
                     {!game.win && !game.lose ? (
                         <>
@@ -164,6 +163,9 @@ export function Game({ socket }) {
                                                     ? "ahorcado__game-game_letters-letter"
                                                     : "ahorcado__game-game_letters-letter-disabled"
                                             }`}
+                                            disabled={game.availableLetters.includes(
+                                                letter
+                                            )}
                                         >
                                             <h1>{letter}</h1>
                                         </div>
