@@ -95,7 +95,7 @@ export function Game({ socket }) {
 
     const letterSelected = (letter) => {
         if (game.availableLetters.includes(letter)) {
-            socket.emit("letterSelected", letter);
+            socket.emit("letterSelected", id, letter);
         }
     };
 
